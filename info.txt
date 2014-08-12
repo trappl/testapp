@@ -8,7 +8,7 @@ Config.xml file:
 <widget id="at.fab4minds.trappl.testapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>TestApp</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Testapp zur Evaluierung der Funktionen von Phonegap
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
@@ -29,6 +29,7 @@ Config.xml file:
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.1.0" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -76,7 +77,54 @@ Config.xml file:
 </widget>
 
 
-No Plugins Currently Installed
+Plugins: 
 
-No Platforms Currently Installed
+com.phonegap.plugins.barcodescanner,org.apache.cordova.camera,org.apache.cordova.dialogs,org.apache.cordova.file,org.apache.cordova.geolocation,org.apache.cordova.vibration,org.jboss.aerogear.cordova.geo
+
+Android platform:
+
+Available Android targets:
+----------
+id: 1 or "android-16"
+     Name: Android 4.1.2
+     Type: Platform
+     API level: 16
+     Revision: 4
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : no ABIs.
+----------
+id: 2 or "android-19"
+     Name: Android 4.4.2
+     Type: Platform
+     API level: 19
+     Revision: 3
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in
+ Tag/ABIs : default/x86
+----------
+id: 3 or "android-20"
+     Name: Android 4.4W
+     Type: Platform
+     API level: 20
+     Revision: 1
+     Skins: HVGA, QVGA, WQVGA400, WQVGA432, WSVGA, WVGA800 (default), WVGA854, WXGA720, WXGA800, WXGA800-7in, AndroidWearRound, AndroidWearSquare, AndroidWearRound, AndroidWearSquare
+ Tag/ABIs : android-wear/armeabi-v7a, android-wear/x86
+----------
+id: 4 or "Google Inc.:Google APIs (x86 System Image):19"
+     Name: Google APIs (x86 System Image)
+     Type: Add-On
+     Vendor: Google Inc.
+     Revision: 7
+     Description: Android x86 + Google APIs
+     Based on Android 4.4.2 (API level 19)
+     Libraries:
+      * com.google.android.media.effects (effects.jar)
+          Collection of video effects
+      * com.android.future.usb.accessory (usb.jar)
+          API for USB Accessories
+      * com.google.android.maps (maps.jar)
+          API for Google Maps
+     Skins: WSVGA, QVGA, WVGA854, WQVGA432, WVGA800 (default), WXGA800, HVGA, WXGA720, WQVGA400, WXGA800-7in
+ Tag/ABIs : default/x86
+
+
 

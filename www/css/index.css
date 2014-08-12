@@ -37,40 +37,24 @@ body {
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:28px;
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    width: 95%;
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
-}
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+    margin: 0px auto;
+    padding-bottom: 120px;
+    padding-top: 50px;
 }
 
 h1 {
-    font-size:24px;
+    font-size:28px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
@@ -115,6 +99,56 @@ h1 {
 }
 
 .button {
-    margin: 20px;
-    font-size: 24pt;
+    margin: 10px auto;
+    padding: 20px 0px 20px 0px;
+    width: 95%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.bild{
+    height: 200px;
+    width: 200px;
+}
+
+.input{
+    margin: 10px;
+    width: 95%;
+    height: 50px;
+}
+
+#load{
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    opacity: 0.0;
+}
+
+html{
+    height: 100%;
+}
+
+.bottom{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background-color: #A7A7A7;
+}
+
+.element{
+    margin: 10px auto;
+    padding: 20px 0px 20px 0px;
+    width: 45%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.top{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    text-align: left;
+    height: 50px;
 }

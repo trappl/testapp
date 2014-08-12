@@ -2,7 +2,7 @@
 <widget id="at.fab4minds.trappl.testapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>TestApp</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Testapp zur Evaluierung der Funktionen von Phonegap
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
@@ -23,6 +23,7 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.1.0" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
